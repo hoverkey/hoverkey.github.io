@@ -1,0 +1,180 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: #003300;
+	
+	background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#5ba750),color-stop(100%,#003300));
+background-image: -webkit-linear-gradient(45deg,#5ba750 0,#003300 100%);
+background-image: -moz-linear-gradient(45deg,#5ba750 0,#003300 100%);
+background-image: -ms-linear-gradient(45deg,#5ba750 0,#003300 100%);
+background-image: -o-linear-gradient(45deg,#5ba750 0,#003300 100%);
+background-image: linear-gradient(45deg,#5ba750 0,#003300 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5ba750', endColorstr='#003300', GradientType=1);
+
+	background-attachment: fixed;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	
+	padding: 0;
+	margin: 0;
+	
+}
+.content-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -50px;
+}
+
+.navbar {
+	background: transparent;
+	background-color: rgba(255,255,255,0.05);
+	border-color: transparent;
+	color: white;
+}
+
+.navbar>.container .navbar-brand {
+	text-indent: -9999px;
+	background: url(../images/logo.png) no-repeat;
+	width: 200px;
+	height: 26px;
+	background-size: 100%;
+	margin-left: 20px;
+	margin-top: 13px;
+	opacity: 0.25;
+	transition: opacity 0.5s ease;
+	
+	/* Temporary styles to center logo */
+	float: none;
+	display: block;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	
+}
+
+.navbar>.container .navbar-brand:hover {
+	opacity: 1;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #6cb858;
+	transition: color 0.5s ease;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	background: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+	transition: background-color 0.5s ease;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background: black;
+}
+
+.navbar-inverse .navbar-collapse {
+	border-color: transparent;
+}
+
+/* HOMEPAGE */
+
+.homepage .hoverkey-icon {
+	display: block;
+	width: 396px;
+	height: 208px;
+	margin: 0 auto;
+	background: url(../images/icon.png);
+	background-size: 100%;
+	margin-top: 100px;
+	margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+	.homepage .hoverkey-icon {
+		width: 198px;
+		height: 104px;
+		background-size: 100%;
+		margin-top: 50px;
+	}
+}
+
+.homepage .logo {
+	width: 294px;
+	height: 40px;
+	margin: 0 auto;
+	text-indent: -9999px;
+	background: url(../images/logo-noicon.png);
+	background-size: 100%;
+	margin-bottom: 25px;
+}
+
+.homepage h2 {
+	font-weight: 300;
+	margin-bottom: 25px;
+	color: #6cb858;
+}
+
+.homepage .lead {
+	font-size: 18px;
+	line-height: 1.5;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.homepage .hero .btn {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #6cb858;
+	background: transparent;
+	color: #6cb858;
+	transition: all 0.5s ease;
+	margin-bottom: 100px;
+	
+}
+
+.homepage .hero .btn:hover,
+.homepage .hero .btn:active {
+	background: white;
+	border-color: white;
+	color: #33702e;
+	opacity: 1;
+}
+
+/* FOOTER */
+
+.footer {
+	background: rgba(0,0,0,0.1);
+	opacity: 0.9;
+	height: 50px;
+	color: white;
+	z-index: 999;
+}
+
+@media (max-width: 400px) {
+	.content-wrapper {
+		margin-bottom: -60px;
+	}
+	.footer {
+		height: 60px;
+	}
+}
+
+.footer a {
+	color: #6cb858;
+	transition: all 0.5s ease;
+}
+
+.footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.footer p {
+	padding-top: 15px;
+}
